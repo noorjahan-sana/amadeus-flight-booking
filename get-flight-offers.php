@@ -36,6 +36,7 @@ if ( isset( $access_token ) ) {
 	'destinationLocationCode' => sanitize_text_field( $_POST["destinationLocationCode"] ),
 	'departureDate' 	      => sanitize_text_field( $_POST["departureDate"] ),
 	'adults'                  => sanitize_text_field( $_POST["adults"] ),
+  'currencyCode'           => 'AUD', 
   );
   if ( $_POST["returnDate"] !== '' ) {
 	$travel_data['returnDate'] = sanitize_text_field( $_POST["returnDate"] );
